@@ -17,3 +17,8 @@
 
 ### Fill in your First name and Last name in the 1st field, and fill in your NON UofT email in the 2nd field, click submit. 
 <img src="https://github.com/kmomuphnie/ECE444-F2020-Lab3/blob/main/img/act2-4.png" width="700">
+
+## Activity 3 (1 point): Briefly summarize the difference between SQL or NoSQL database.
+
+SQL databases are relational databases and NoSQL databses are non-relational databases. SQL databases store data in tables while  NoSQL databases use collections(graphes, key-value pairs, documents... etc.) instead of tables. SQL databases store data splitly into multiple tables while NoSQL databases store related data all together(i.e. every information of an user)
+Most NoSQL databases do not support JOIN operation while JOIN operation is essential to SQL databases.
