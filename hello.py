@@ -17,17 +17,10 @@ moment = Moment(app)
 def index():
 	name = None
 	form = NameForm()
-    if form.validate_on_submit():
-        name = form.name.data
-        form.name.data = ''
-    return render_template('index.html', form=form, name=name)
-
-
-
-
-@app.route('/')
-def index():
-	return render_template('index.html', current_time=datetime.utcnow())
+	if form.validate_on_submit():
+		name = form.name.data
+		form.name.data = ''
+	return render_template('index.html', form=form, name=name)
 
 
 @app.route('/user/<name>')
@@ -43,8 +36,8 @@ def internal_server_error(e):
 	return render_template('500.html'), 500
 
 class NameForm(Form):
-name = StringField('What is your name?', validators=[Required()])
-submit = SubmitField('Submit')
+	name = StringField('What is your name?', validators=[Required()])
+	submit = SubmitField('Submit')
 
 if __name__ == '__main__':
     app.run(debug=True)
