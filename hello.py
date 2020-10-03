@@ -3,6 +3,8 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from datetime import datetime
 from flask_wtf import Form
+from wtforms import StringField, SubmitField
+from wtforms.validators import Required, Email
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
@@ -28,6 +30,10 @@ def page_not_found(e):
 @app.errorhandler(500)
 def internal_server_error(e):
 	return render_template('500.html'), 500
+
+class NameForm(Form):
+name = StringField('What is your name?', validators=[Required()])
+submit = SubmitField('Submit')
 
 if __name__ == '__main__':
     app.run(debug=True)
