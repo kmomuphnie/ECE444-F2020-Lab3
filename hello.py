@@ -16,7 +16,7 @@ moment = Moment(app)
 @app.route('/', methods=['GET', 'POST'])
 def index():
 	name = None
-    form = NameForm()
+	form = NameForm()
     if form.validate_on_submit():
         name = form.name.data
         form.name.data = ''
