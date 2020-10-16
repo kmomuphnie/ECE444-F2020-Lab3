@@ -4,9 +4,8 @@
 
 
 ## Activity 1:(1pt) 
-Perform all development in a branch "lab4_Microservice_Experiment" in your Lab3 taskGitHub repository (you are experimenting after all).
-
+Perform all development in a branch "lab4_Microservice_Experiment" in your Lab3 task GitHub repository
 ## Activity 2: (6pt) 
-In addition to the code, this branch should contain a README.md file that describes howto build and start the system (including the location of the Docker files and a screenshot of your docker run command, Browser, and your docker image).
+How to build and start the system (including the location of the Docker files and a screenshot of your docker run command, Browser, and your docker image).
 
 ## Activity 3 ) (3pt) Briefly summarize the differences between Docker and Virtual Machine.
