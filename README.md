@@ -40,9 +40,9 @@ VM creates virtual OS on host server, then run application inside of it. Every V
 
 But the Docker creates Docker engine on host server, uses the snapshot of the OS as images, uses the instances of images as containers, then deploys applications inside the containers on top of the Docker engine. But all application process within the containers share the OS of the host.
 
-The VM takes much larger memory(in GB) while the docker image take much much smaller memory(in MB).
+The VM takes much larger memory(in GB) while the docker images take much much smaller memory(in MB).
 
-The VM takes longer time to initialize(few mins) while the docker imge only take few milliseconds.
+The VM takes longer time to initialize(few mins) while the docker images only take few milliseconds.
 
 The docker has much higher resource efficiency. A host server can support thousands of Docker containers while it can only support dozens of VMs.
 
