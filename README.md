@@ -36,14 +36,16 @@ The `Dockerfile`and the `requirements.txt` are under the same directory with oth
 
 The Docker and VM are foundamentally different. 
 
-VM creates virtual OS on host server, then run application inside of it. Every VM runs in it own virtual OS.
+VM creates guest OS above the host OS on host server, then run application inside of it. Every VM runs in it own virtual OS.
 
 But the Docker creates Docker engine on host server, uses the snapshot of the OS as images, uses the instances of images as containers, then deploys applications inside the containers on top of the Docker engine. But all application process within the containers share the OS of the host.
 
 The VM takes much larger memory(in GB) while the docker images take much much smaller memory(in MB).
 
-The VM takes longer time to initialize(few mins) while the docker images only take few milliseconds.
+The VM takes longer time to initialize(few mins) while the docker images only take from few milliseconds to few seconds.
 
 The docker has much higher resource efficiency. A host server can support thousands of Docker containers while it can only support dozens of VMs.
+
+Th VM has its own OS and does not share OS, with strong isolation(hardware-level) in the host kernel. While the docker containers have shared the host kernel, the VM is much more secure than a docker container. 
 
 
