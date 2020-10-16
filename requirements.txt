@@ -13,5 +13,4 @@ idna==2.10
 itsdangerous==1.1.0
 jinja2==2.11.2
 pip==20.2.2
-python==3.8.5
 markupsafe==1.1.1
